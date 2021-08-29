@@ -16,8 +16,8 @@ csvtojson()
         if (err) throw err;
 
         client
-          .db("zkoder_db")
-          .collection("category")
+          .db("a_import_test")
+          .collection("file")
           .insertMany(csvData, (err, res) => {
             if (err) throw err;
 
